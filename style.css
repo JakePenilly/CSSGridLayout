@@ -122,6 +122,7 @@ variables are available to be used anywhere in our html document
     grid-area: ci8;
 }
 
+
 /* Use a flexible layout grid */
 .main-container {
     display: grid;
