@@ -35,12 +35,8 @@ variables are available to be used anywhere in our html document
 
 .banner-subtitle {
     font-size: 2em;
-    padding-left: 2px;
-    padding-top: 4px;
-}
-
-.team-member-card-panel {
-    display: contents;
+    padding-left: 0.125rem;
+    padding-top: 0.25rem;
 }
 
 .team-member-card {
@@ -60,7 +56,6 @@ variables are available to be used anywhere in our html document
     padding: 1em;
 }
 
-
 .our-clients-title {
     background-color: var(--color2);
     color: var(--color4);
@@ -73,7 +68,6 @@ variables are available to be used anywhere in our html document
 .client-icon {
     width: 100%;
 }
-
 
 /* now we create names for the grid areas for specific elements */
 #banner {
@@ -94,10 +88,6 @@ variables are available to be used anywhere in our html document
 
 #ourClientsTitle {
     grid-area: ct1;
-}
-
-#contactUs {
-    grid-area: cu1;
 }
 
 #clientIcon1 {
@@ -165,9 +155,7 @@ media queries for progressively bigger screen widths
         "ci7 ci7 ci8 ci8" minmax(8em, auto)
 }
     
-
-
-@media (min-width: 50em) and (max-resolution: 2dppx) {
+@media (min-width: 50em) {
        .main-container {
         grid-template:
         "bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1" minmax(8em, auto)
@@ -188,9 +176,7 @@ media queries for progressively bigger screen widths
     }
 }
 
-
-
-@media (min-width: 75em) and (max-resolution: 2dppx) {
+@media (min-width: 75em) {
     .main-container {
         grid-template:
         "bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1" minmax(8em, auto)
